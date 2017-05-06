@@ -3,7 +3,7 @@ title: "SNP Mapper"
 author: 
 - "Evan Williams"
 - "Mariah Taylor"
-date: "`r Sys.Date()`"
+date: "2017-05-05"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{SNP Mapper}
