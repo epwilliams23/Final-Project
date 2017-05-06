@@ -1,6 +1,8 @@
 ---
 title: "SNP Mapper"
-author: "Mariah Taylor"
+author: 
+- "Evan Williams"
+- "Mariah Taylor"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
