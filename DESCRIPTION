@@ -1,0 +1,14 @@
+Package: SNP.map
+Type: Package
+Title: SNP Mapper 
+Version: 0.1.0
+Author: Evan Williams, Mariah Taylor
+Maintainer: Evan Williams <ewilli99@vols.utk.edu>
+Description: An R package that contains functions that allow you to map the frequency of SNPs over the length of the genome as well as the number of SNPs at each cell passage number.
+License: CC0
+Encoding: UTF-8
+LazyData: true
+Suggests: knitr,
+    rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1

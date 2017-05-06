@@ -1,0 +1,78 @@
+---
+title: "SNP Mapper"
+author: "Mariah Taylor"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{SNP Mapper}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+
+# Introduction
+
+SNPs found throughout the genome of viruses are of great importance to virologist as it can tell one about the mutations a virus is undergoing as it transends different host barriers or to observe which parts of the genome are conserved. With this said, this R package will allow one to visually represent SNPs found in the virus genomes.
+
+SNP.mapper contains 2 functions, the first function will create a plot where SNP frequency (Percentage) will be plotted against the length of the genome (Nucleotide Position), the second function will create a plot where the number of observed SNPs (Number of SNPs) at each passage will be plotted against passage number(Passage Number). 
+
+#Funtions
+
+## frpo_plot function
+
+Creates a plot where SNP frequency (Percentage) will be plotted against the length of the genome (Nucleotide Position).
+
+## map_SNP function
+
+Creates a plot where the number of observed SNPs (Number of SNPs) at each passage will be plotted against passage number(Passage Number).
+
+# Data needed for Functions
+
+## frpo_plot_plot function
+
+Funtion requires a data frame where the first column contains the frequency of a SNP (frequency) corresponding to second column containing the position of the SNP on the nucleotide (position).
+
+
+|position|frequency|
+|--------|---------|
+|x|y|
+
+## map_SNP function
+
+Funtion requires a data frame where first column contains the Number of SNPs (Number.of.SNPs) corresponding to the 2nd column containing the segment (Segment) corresponding to the 3rd column containg the passage number (Passage.Number).
+
+|passage|snps|segments|
+|-------|----|--------|
+|x|y|z|
+
+It is highly recommended that the data originates from viruses which exhibit genomes that consist out of more that 1 segment.
+
+# Create the Plot
+
+## frpo_plot function
+
+To run the function you may use the example code below:
+
+The user need to specify the length of the genome, the default is 4000 bp.
+
+```
+library(tidyverse)
+library(SNP.mapper)
+
+frpo_plot_plot(example.data, 3500)
+```
+
+## map_SNP function
+
+To run the function you may use the example code below:
+
+```
+library(tidyverse)
+library(SNP.mapper)
+
+map_SNP(example.data2)
+```
+
+
+
+
